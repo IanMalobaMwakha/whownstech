@@ -910,5 +910,34 @@ except ValueError:
     print("Do not write your age in words or strings!!!")
 """
 
-print("While in Cameroon I ate 'Fufu'")
+course = "Python for beginners"
+# The square bracket syntax
+print(course[:-7])
+print(course)
+
+
+# Formatted Strings
+
+name = "Alfred"
+age = 46
+print(f"Hello, {name}. You are {age} years old.")
+
+
+# STRING METHODS
+school = "university of the people"
+print(len(school))
+
+print(school.find("o"))
+
+
+
+
+
+
+
+
+
+
+
+
 
