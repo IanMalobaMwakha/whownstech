@@ -1,13 +1,12 @@
 {% extends 'base.html' %}
 
-{% block content %}
 <br>
 <style>
     h2{color: red}
 
 
 </style>
-<h2><em>Below are the most Interesting latest articles by whownstech...have fun!</em></h2>
+<h2><em>Who is Alan Turing the father of modern computer science.</em></h2>
 <br>
 <p><em>By: <b>MALOBA IAN M.</b></em></p>
 <p>Contact me: <a href="https://www.linkedin.com/in/ianmalobamwakha/"
@@ -27,23 +26,14 @@
     </a></p>
 <br>
 <br>
-<br>
-<br>
 
-<div class="row">
-    {% for blog in blogs %}
-    <div class="col">
-        <div class="card" style="width: 20rem;">
-            <img class="card-img-top" src="{{blog.cover_image_url}}" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">{{blog.blog_title}}</h5>
-                <p class="card-text">{{blog.reading_time}} minutes read</p>
-                <a href="Who is Alan Turing the father of modern Computer Science.html
-" class="btn btn-primary">Read more..</a>
-            </div>
-        </div>
-    </div>
-    {% endfor %}
+
+<div class="blog">
+    <p>
+        Who is Alan Turing the father of modern computer science.
+        Who is Alan Turing the father of modern computer science.
+        Who is Alan Turing the father of modern computer science.
+    </p>
 </div>
 <br>
 <br>
@@ -51,12 +41,7 @@
 <br>
 <br>
 <br>
-<br>
 
-<br>
-<br>
-
-{% endblock %}
 
 
 

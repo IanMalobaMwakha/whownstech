@@ -1,7 +1,6 @@
-# This is a sample Python script.
+# PYTHON REVISION
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+
 """
 
 def print_hi(name):
@@ -915,13 +914,11 @@ course = "Python for beginners"
 print(course[:-7])
 print(course)
 
-
 # Formatted Strings
 
 name = "Alfred"
 age = 46
 print(f"Hello, {name}. You are {age} years old.")
-
 
 # STRING METHODS
 school = "university of the people"
@@ -929,15 +926,26 @@ print(len(school))
 
 print(school.find("o"))
 
+# The in Operator
 
+fruit1 = "orange is delicious"
+print("delicious" in fruit1)
 
+# Arithmetic Operations
+# -, +, %, *, /, **, //
 
+print(10 // 3)  # Double forward slash -> Returns integer without the remainder
+print(10 % 3)  # Modulus -> Returns remainder of division
+print(2 ** 3)
 
+# Augmented Assignment Operator (+= , -= , *=)
+age = 10
+age = age + 2
+print(age)
 
+age = 10
+age += 2
+print(age)
 
-
-
-
-
-
-
+# Operator precedence
+# BODMAS, PEMDAS
