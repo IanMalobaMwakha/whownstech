@@ -444,6 +444,7 @@ else:
     print("You will get financial support")
 
 """
+import math
 
 # WEIGHT CONVERTER
 
@@ -907,7 +908,7 @@ try:
 
 except ValueError:
     print("Do not write your age in words or strings!!!")
-"""
+
 
 course = "Python for beginners"
 # The square bracket syntax
@@ -947,5 +948,38 @@ age = 10
 age += 2
 print(age)
 
-# Operator precedence
-# BODMAS, PEMDAS
+
+number_of_students = 0
+number_of_students += 1
+
+# Operator precedence -> BODMAS, PEMDAS
+
+# Math Functions
+# rounding off -> Look at the numbers 1, 10, 100, 1000
+print(round(8.6))
+x = 3
+print(x * math.pi)
+"""
+import math
+import random
+
+print(random.randrange(1, 10))
+
+is_hot = True
+is_cold = False
+
+if is_hot:
+    print("It is a hot day")
+    print("Drink plenty of water")
+
+elif is_cold:
+    print("It is a old day")
+    print("Wear warm clothes")
+
+
+else:
+    print("It is a lovely day")
+
+print("Enjoy your day")
+
+
