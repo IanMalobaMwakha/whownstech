@@ -1,0 +1,28 @@
+ .about{
+ text-align: center;
+        background-color: AliceBlue;
+         border: solid;
+         border-width: 1px;
+        border-color: CornflowerBlue;
+        margin: 15px 7px 15px 7px;
+        padding: 5px 17px 5px 17px;
+         border-radius: 25px;
+        font-family: Cursive;
+        }
+ .footer{
+        text-align: center;
+        background-color: black;
+        color: white;
+        }
+        footerContact{
+        text-align: center;
+        }
+        hr{color: blue;
+        }
+.table{
+.column-gap: 30px;
+}
+.body{
+    background-color: #C5DAE7;
+}
+
