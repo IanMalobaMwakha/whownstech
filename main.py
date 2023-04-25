@@ -967,22 +967,6 @@ import random
 
 print(random.randrange(1, 10))
 
-is_hot = True
-is_cold = False
-
-if is_hot:
-    print("It is a hot day")
-    print("Drink plenty of water")
-
-elif is_cold:
-    print("It is a old day")
-    print("Wear warm clothes")
-
-else:
-    print("It is a lovely day")
-
-print("Enjoy your day")
-
 """
 
 random_numbers = random.randrange(1, 10) # Only numbers to be considered are 1, 3, 5, 7, and 9
