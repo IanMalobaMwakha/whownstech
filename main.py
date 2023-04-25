@@ -5,18 +5,6 @@ import random
 
 """
 
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
-
-
-
-
-
 has_high_income = True
 has_criminal_record = False
 if has_high_income and not has_criminal_record:
