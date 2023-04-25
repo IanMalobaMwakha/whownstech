@@ -1,3 +1,5 @@
+import random
+
 # PYTHON REVISION
 
 
@@ -976,11 +978,18 @@ elif is_cold:
     print("It is a old day")
     print("Wear warm clothes")
 
-
 else:
     print("It is a lovely day")
 
 print("Enjoy your day")
 
 """
+
+random_numbers = random.randrange(1, 10) # Only numbers to be considered are 1, 3, 5, 7, and 9
+print(random_numbers)
+
+
+dish_washer = random.choice(["Dave", "John", "Anne", "Joy", "Philip"])
+print(dish_washer)
+
 
