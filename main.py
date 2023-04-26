@@ -1,4 +1,6 @@
 import random
+import math
+
 
 # PYTHON REVISION
 
@@ -17,7 +19,7 @@ elif temp < 10:
 elif temp != 35:
     print("hgfddfghj")
 
-# Allow user enter their weight in either kilograms or pounds and convert it
+
 
 weight = input('Weight: ')
 units = input('L(bs) or K(gs): ')
@@ -960,4 +962,12 @@ print(random_numbers)
 dish_washer = random.choice(["Dave", "John", "Anne", "Joy", "Philip"])
 print(dish_washer)
 
+
+# LOGICAL OPERATORS
+# The Logical and operator
+has_high_income = True
+has_good_credit = True
+
+if has_high_income and has_good_credit:
+    print("Eligible for a loan")
 
