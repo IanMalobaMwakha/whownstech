@@ -953,7 +953,7 @@ import random
 
 print(random.randrange(1, 10))
 
-"""
+
 
 random_numbers = random.randrange(1, 10) # Only numbers to be considered are 1, 3, 5, 7, and 9
 print(random_numbers)
@@ -971,3 +971,62 @@ has_good_credit = True
 if has_high_income and has_good_credit:
     print("Eligible for a loan")
 
+
+# The logical or operator
+
+has_high_income = True
+has_good_credit = False
+is_working = True
+
+if has_high_income and has_good_credit or is_working:
+    print("Eligible for a loan")
+
+# IN SUMMARY
+# AND -> Both have to be True
+# OR  -> At least one has to be True
+
+
+# The logical not operator
+
+has_high_income = True
+has_criminal_record = False
+
+if has_high_income and not has_criminal_record:
+    print("Eligible for a loan")
+
+
+is_sick = True
+
+if is_sick:
+    print("Go to the hospital!")
+
+
+
+# COMPARISON OPERATORS
+
+# > Greater than
+# < Less than
+# >= Greater than or equal to
+# <= Less than or equal to
+#  == Equality operator
+
+temperature = 23
+
+if temperature <= 7:
+    print("It is a cold day")
+elif temperature >= 25:
+    print("It is a hot day")
+else:
+    print("It is neither hot nor cold")
+"""
+
+# Name should never be less than 3 characters and name should never be more than 50 characters
+
+name = input("Enter your name: ")
+
+if len(name) < 3:
+    print("Name cannot be less than 3 characters!!")
+elif len(name) > 50:
+    print("Name cannot be more than 50 characters!!")
+else:
+    print("Name is perfect!!")
