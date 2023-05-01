@@ -1075,7 +1075,7 @@ if unit.upper() == "L":
 
 elif unit.upper() == "K":
     converted_weight = int(weight) * 2.205
-    print(f"Your weight is {converted_weight} pounds.")
+    print(f"Your weight is {converted_weight} pounds")
 
 else:
     print("Please state the unit of your weight in K/k or L/l.")
