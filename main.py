@@ -1,7 +1,6 @@
 import random
 import math
 
-
 # PYTHON REVISION
 
 
@@ -1018,7 +1017,8 @@ elif temperature >= 25:
     print("It is a hot day")
 else:
     print("It is neither hot nor cold")
-"""
+
+
 
 # Name should never be less than 3 characters and name should never be more than 50 characters
 
@@ -1030,3 +1030,92 @@ elif len(name) > 50:
     print("Name cannot be more than 50 characters!!")
 else:
     print("Name is perfect!!")
+
+
+
+# INFO FROM THE USER -> weight, unit
+# We calculate weight in Pounds if entered was Kilograms
+# We calculate weight in Kilograms if entered weight was Pounds
+
+user_weight = input("Enter your weight: ")
+unit = input("Is the weight in Pounds(L) or Kilograms(K): ")
+
+
+if unit.upper() == "L":
+    converted_weight = int(user_weight) * 0.45
+    print(f"Your weight in kilograms is {converted_weight} kgs.")
+
+elif unit.upper() == "K":
+    converted_weight = int(user_weight) / 0.45
+    print(f"Your weight in pounds is {converted_weight} pounds.")
+
+else:
+    print("Please enter either K/k or L/l")
+
+
+
+# WHILE LOOPS
+
+i = 1
+while i <= 5:
+    print(i)
+    i = i + 1
+
+
+
+
+# WEIGHT CONVERTER PROJECT
+
+weight = input("What is your Weight: ")
+unit = input("Is this weight in Pounds(L) or Kilograms(K): ")
+
+if unit.upper() == "L":
+    converted_weight = int(weight) / 2.205
+    print(f"Your weight is {converted_weight} kilograms.")
+
+elif unit.upper() == "K":
+    converted_weight = int(weight) * 2.205
+    print(f"Your weight is {converted_weight} pounds.")
+
+else:
+    print("Please state the unit of your weight in K/k or L/l.")
+
+
+i = 1
+while i <= 5:
+    print(i)
+    i = i + 1
+"""
+
+"""
+>>start
+The car has started
+
+>>stop
+The car has stopped
+
+>>help
+start- To start the car
+stop- To stop the car
+quit- To quit/exit
+"""
+
+while True:
+    command = input(">>").lower()
+
+    if command == "start":
+        print("The car has started.")
+
+    elif command == "stop":
+        print("The car has stopped.")
+
+    elif command == "help":
+        print("start- To start the car")
+        print("stop- To stop the car")
+        print("quit- To quit/exit")
+
+    elif command == "quit":
+        break
+
+    else:
+        print("I don't understand that!")
