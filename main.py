@@ -1064,21 +1064,6 @@ while i <= 5:
 
 
 
-# WEIGHT CONVERTER PROJECT
-
-weight = input("What is your Weight: ")
-unit = input("Is this weight in Pounds(L) or Kilograms(K): ")
-
-if unit.upper() == "L":
-    converted_weight = int(weight) / 2.205
-    print(f"Your weight is {converted_weight} kilograms.")
-
-elif unit.upper() == "K":
-    converted_weight = int(weight) * 2.205
-    print(f"Your weight is {converted_weight} pounds")
-
-else:
-    print("Please state the unit of your weight in K/k or L/l.")
 
 
 i = 1
@@ -1098,7 +1083,7 @@ The car has stopped
 start- To start the car
 stop- To stop the car
 quit- To quit/exit
-"""
+
 
 while True:
     command = input(">>").lower()
@@ -1119,3 +1104,25 @@ while True:
 
     else:
         print("I don't understand that!")
+
+
+
+for letter in "Kelly":
+    print(letter)
+
+
+names = ["Kelly", "Ian", "Ken", "John"]
+for x in names:
+    print(x)
+
+
+
+print(range(10))
+
+for number in range(10):
+    print(number)
+"""
+
+for digit in range(5, 16, 3):
+    print(digit)
+
