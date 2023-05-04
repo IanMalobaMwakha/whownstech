@@ -1073,8 +1073,6 @@ while i <= 5:
 """
 
 """
->>start
-The car has started
 
 >>stop
 The car has stopped
