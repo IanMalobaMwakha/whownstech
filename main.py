@@ -1119,8 +1119,38 @@ print(range(10))
 
 for number in range(10):
     print(number)
+
+
+for character in "Kelly":
+    print(character)
+
+for name in ["Ian", "Kelly", "John", "Ahmed"]:
+    print(name)
+
+for digit in [4, 6, 9, 2, 5]:
+    print(digit * "*")
+
+
+
+# Range function
+
+for number in range(15, 51, 3):
+    print(number)
+
 """
 
-for digit in range(5, 16, 3):
-    print(digit)
+
+prices = [4, 3.95, 12]
+
+total = 0
+for price in prices:
+    total = total + price
+
+print(f"Total: ${total}")
+
+# (0, 0)
+
+for x in range(3):
+    for y in range(3):
+        print(f"({x}, {y})")
 
