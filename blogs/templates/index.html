@@ -1,5 +1,8 @@
 {% extends 'base.html' %}
 
+{% block title %} Homepage {% endblock %}
+
+
 {% block content %}
 <br>
 <style>
@@ -37,8 +40,7 @@
             <div class="card-body">
                 <h5 class="card-title">{{blog.blog_title}}</h5>
                 <p class="card-text">{{blog.reading_time}} minutes read</p>
-                <a href="Who is Alan Turing the father of modern Computer Science.html
-" class="btn btn-primary">Read more..</a>
+                <a href="{% url 'blog_detail' pk=blog.pk %}" class="btn btn-primary">Read more..</a>
             </div>
         </div>
     </div>

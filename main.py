@@ -1,4 +1,3 @@
-import random
 import math
 
 # PYTHON REVISION
@@ -1137,7 +1136,6 @@ for digit in [4, 6, 9, 2, 5]:
 for number in range(15, 51, 3):
     print(number)
 
-"""
 
 
 prices = [4, 3.95, 12]
@@ -1153,4 +1151,396 @@ print(f"Total: ${total}")
 for x in range(3):
     for y in range(3):
         print(f"({x}, {y})")
+
+numbers = [1, 3]
+
+
+
+# FOR LOOP
+
+noun = "School"
+for letter in noun:
+    print(letter)
+
+
+for name in ["Ken", "Anne", "Kelly", "Ian"]:
+    print(name)
+
+clubs = ["Arsenal", "Man Utd", "Liverpool", "Chelsea", "Man City"]
+for single_club in clubs:
+    print(single_club)
+
+numbers = [1, 3, 5, 2, 7, 4, 2]
+for digit in numbers:
+    print(digit)
+
+
+
+# RANGE FUNCTION
+print("first")
+for number in range(8):
+    print(number)
+
+
+print("second")
+# We can give the minimum value to in the range to be considered
+for item in range(5, 14):
+    print(item)
+
+print("third")
+# We can add an interval to our range of values
+# The interval is added as the third argument
+for digit in range(3, 13, 3):
+    print(digit)
+
+
+# Exercise - Write a programme to calculate the total costs of all items in a shopping cart
+
+prices = [43, 12, 20, 18, 4, 19.5, 2]
+
+total = 0
+for price in prices:
+    total = total + price
+
+print(f"The total value is: ${total}")
+
+
+# NESTED LOOPS
+for x in range(4):
+    for y in range(4):
+        print(f"({x}, {y})")
+
+adjectives = ["red", "small", "tasty"]
+fruits = ["banana", "apple", "cherry"]
+
+
+for adj in adjectives:
+    for fruit in fruits:
+        print(f"The {fruit} is {adj}.")
+
+
+# LISTS
+names = ["Kelly", "Ian", "John", "Ahmed"]
+print(names[1:-1])
+
+print(names)
+
+names[1] = "Anne"
+print(names)
+
+
+# 2 DIMENSIONAL LISTS (2D)
+
+names = [
+    ["Alice", "Trina", "Sophy"],
+    ["Peter", "Kelly", "John"]
+]
+
+print(names[1][0])
+
+
+matrix = [
+    [1, 2, 10],
+    [[5, 9], [22, 23], [[3],[2, 7]]],
+    [3, 20, 9] ]
+
+print(matrix[1][2][1][0])
+matrix[2][1] = 7
+print(matrix)
+
+
+# LIST METHODS / FUNCTIONS
+
+# .append() - Used to add a value at the end of a list
+numbers = [2, 6, 9, 30]
+numbers.append(99)
+print(numbers)
+
+
+# .insert() - used to insert a value in middle or at tye beginning of a list
+numbers = [2, 6, 9, 30]
+numbers.insert(2, 3)
+print(numbers)
+
+# .remove() - used to remove an item from a list
+numbers = [2, 6, 9, 30]
+numbers.remove(30)
+print(numbers)
+
+# .clear() - used to empty a list
+numbers = [2, 6, 9, 30]
+numbers.clear()
+print(numbers)
+
+
+# .pop() - Used to remove the last item in our list
+numbers = [2, 6, 9, 30]
+numbers.pop()
+print(numbers)
+
+
+# index - Used to check for existence of an item in a list and find its index
+numbers = [2, 6, 9, 30, 5, 8, 9, 1, 3, 2, 0, 5]
+print(numbers.index(9))
+
+# The in operator - checks existence and return boolean
+numbers = [2, 6, 9, 30]
+print(6 in numbers)
+
+
+# .count() - Used for counting the occurrences or appearances of an item
+numbers = [4, 5, 3, 4, 8, 9, 1, 4, 9, 0, 5, 4, 99, 34, 6, 12, 43, 7, 4, 8, 1, 22, 32, 4, 1, 8]
+print(numbers.count(1))
+
+
+# .sort() - Used to arrange/sort our list in ascending/increasing order
+numbers = [4, 5, 3, 4, 8, 9, 1, 4, 9, 0, 5, 4, 99, 34, 6, 12, 43, 7, 4, 8, 1, 22, 32, 4, 1, 8]
+numbers.sort()
+print(numbers)
+
+# .reverse() - Used to reverse a list/ print from the last to the first
+numbers.reverse()
+print(numbers)
+
+# .copy() - Used to get a copy of our list e.g lets copy list1 to create another list2
+list1 = [3, 4, 5, 6, 7]
+mylist = list1.copy()
+print(list1)
+print(mylist)
+
+
+# EXERCISE - WRITE A PROGRAM THAT REMOVES ANY NUMBER APPEARING MORE THAN TWICE AND ONLY PRINTS IT ONCE
+numbers = [2, 2, 4, 6, 4, 7, 2, 1, 9, 2, 6, 7, 8, 1, 0, 1, 4, 8, 7, 0]
+mynewlist = []
+for number in numbers:
+    if number not in mynewlist:
+        mynewlist.append(number)
+print(mynewlist)
+
+
+numbers = [2, 2, 4, 6, 4, 7, 2, 1, 9, 2, 6, 7, 8, 1, 0, 1, 4, 8, 7, 0]
+unique_values = []
+for number in numbers:
+    if number not in unique_values:
+        unique_values.append(number)
+print(unique_values)
+
+
+# TUPLES
+# Below is an example of a tuple
+numbers = (2, 3, 4)
+
+# Methods of Tuples
+
+# .count() - Used to count the number of occurrences of an item
+my_tuple = (2, 4, 6, 2, 2, 9, 0, 2, 1, 4, 6, 7, 3)
+print(my_tuple.count(2))
+
+# .index() - Used to find the index of the first occurrence of an item
+simple_tuple = (3, 5, 7, 8, 0, 1, 6, 3, 8)
+print(simple_tuple.index(7))
+
+# The in operator
+simple_tuple = (3, 5, 7, 8, 0, 1, 6, 3, 8)
+print(0 in simple_tuple)
+
+# Tuples cannot be modified or changed after assignment (we cannot reassign)
+numbers = (2, 3, 4)
+numbers[1] = 48
+print(numbers)
+
+
+# UNPACKING
+marks = (79, 83, 81)
+John, Mark, Kelly = marks
+print(Kelly,  Mark, John)
+
+
+name1 = "Anne"
+name2 = "Smith"
+print(name1, name2)
+
+
+ages = [13, 14, 76]
+Joy, Antony, Daniel = ages
+print(Daniel, Joy)
+
+
+# DICTIONARIES
+customer1 = {
+    "Name": "John Smith",
+    "age": 57,
+    "is_working": True
+}
+
+customer2 = {
+    "Name": "Ian Geoff",
+    "age": 27,
+    "is_working": False
+}
+
+company = {
+    "name": "Tesla",
+    "number_of_workers": 505,
+    "number_of_branches": 21,
+    "is_registered": True,
+    "paid_taxes": True,
+    "yearly_revenue": 2000000
+}
+
+print(customer2["Name"])
+
+# In a dictionary we have key value pairs. e.g "name" ia a key and "John Smith" ia a value
+# This is how we can access the value of any key in a dictionary
+print(company["name"])
+
+company["name"] = "TESLA WORLD"
+company["yearly_revenue"] = 1010110
+print(company)
+
+
+dictionary = {
+    "walk": "lifting and settling down each foot in turn to move",
+    "run": "to walk very fast",
+    "chair": "a seat",
+    "car": "a four wheeled vehicle that can carry small number of people"
+}
+
+print(dictionary["car"])
+
+
+company = {
+    "name": "Tesla",
+    "number_of_workers": 505,
+    "number_of_branches": 21,
+    "is_registered": False,
+    "paid_taxes": True,
+    "yearly_revenue": 2000000
+}
+
+print(company["name"])
+
+# In a dictionary we have key value pairs. e.g "name" is a key and "Tesla" ia a value
+# This is how we can access the value of any key in a dictionary
+print(company["is_registered"])
+
+# We can change the values of our dictionary
+company["name"] = "TESLA WORLD"  # Reassignment
+print(company["name"])
+company["yearly_revenue"] = 1000000
+print(company)
+
+
+
+# Let us write a programme that asks our phone number and then prints it in words
+
+phone_number = input("Enter your phone number: ")
+
+digit_word_mapping = {
+    "0": "Zero",
+    "1": "One",
+    "2": "Two",
+    "3": "Three",
+    "4": "Four",
+    "5": "Five"
+}
+
+output = ""
+
+for number in phone_number:
+    output += digit_word_mapping.get(number, "*") + " "
+
+print(f"This is your number in words: {output}")
+
+
+
+
+
+
+# Let us write a programme that asks our phone number and then prints it in words
+
+phone_number = input("Enter your phone number: ")
+
+digit_word_mapping = {
+    "0": "Zero",
+    "1": "One",
+    "2": "Two",
+    "3": "Three",
+    "4": "Four",
+    "5": "Five",
+    "6": "Six",
+    "7": "Seven",
+    "8": "Eight",
+    "9": "Nine"
+}
+
+output = ""
+
+for number in phone_number:
+    output += digit_word_mapping.get(number, "?") + " "
+
+print(f"This is your number in words: {output}")
+
+
+# parameter and argument
+def greeting(name1, name2, message):
+    print(f"Hello {name1} {name2}!")
+    print("How are you doing?")
+    print(message)
+
+
+greeting("Alfred", "Hussein", "Have a great day!!")
+
+
+
+def price_calculator(basic_price, discount, commission, tax, shipping_cost):
+    final_price = basic_price - discount - commission + tax + shipping_cost
+    return print(f"The total payable cost is: ${final_price}")
+
+
+# keyword argument
+
+price_calculator(discount=200, tax=15, basic_price=20000, shipping_cost=50, commission=35)
+
+
+# Let us write a programme that asks our phone number and then prints it in words
+
+
+def number_to_word_converter():
+
+    phone_number = input("Enter your phone number: ")
+
+    digit_word_mapping = {
+        "0": "Zero",
+        "1": "One",
+        "2": "Two",
+        "3": "Three",
+        "4": "Four",
+        "5": "Five",
+        "6": "Six",
+        "7": "Seven",
+        "8": "Eight",
+        "9": "Nine"
+    }
+
+    output = ""
+
+    for number in phone_number:
+        output += digit_word_mapping.get(number, "?") + " "
+
+    return f"This is your number in words: {output}"
+
+
+print(number_to_word_converter())
+"""
+
+# EXCEPTIONS
+
+try:
+    age = int(input("Age: "))
+    print(age)
+except ValueError:
+    print("Please enter a numerical value!!")
+
+
 
