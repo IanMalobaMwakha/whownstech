@@ -1,7 +1,4 @@
-import math
-
 # PYTHON REVISION
-
 
 """
 has_high_income = True
@@ -1526,21 +1523,164 @@ def number_to_word_converter():
     output = ""
 
     for number in phone_number:
-        output += digit_word_mapping.get(number, "?") + " "
+        output += digit_word_mapping.get(number, "!") + " "
 
     return f"This is your number in words: {output}"
 
 
 print(number_to_word_converter())
-"""
+
 
 # EXCEPTIONS
 
 try:
     age = int(input("Age: "))
-    print(age)
+    print(f"You are {age} years old.")
 except ValueError:
-    print("Please enter a numerical value!!")
+    print("Age must be a numerical value!!")
 
 
 
+try:
+    def division_calculator(first_number, second_number):
+        answer = first_number / second_number
+        return print(f"The answer for your division is {answer}")
+    division_calculator(77, 4)
+
+except ZeroDivisionError:
+    print("The second cannot be Zero.")
+
+
+
+# Object-oriented programming (OOP)
+class MyClass:
+    x = 5
+
+
+# class
+class Point:
+    def move(self):
+        print("Move.................")
+
+    def draw(self):
+        print("Drawing,,,")
+
+    def stop(self):
+        print("iuytrertyuil")
+
+
+# object
+duck = Point()
+duck.stop()
+# attributes
+duck.number = 3
+duck.y = True
+duck.name = "this is an attribute ..."
+print(duck.number)
+
+me = Point()
+me.move()
+me.x = 18
+me.y = "5"
+
+
+class Car:
+    def drive(self):
+        print("Driving the car")
+
+    def hire(self):
+        print("Hiring the car")
+
+
+daniel = Car()  # Object
+daniel.hire()
+daniel.injured = True  # Attribute
+
+alphonce = Car()
+alphonce.drive()
+alphonce.message = "I won't be available"
+
+
+# The __init__() Function
+
+
+
+class Person:
+    def __init__(self, age, name, height, is_sick):
+        self.name = name
+        self.age = age
+        self.height = height
+        self.is_sick = is_sick
+    def run(self):
+        print("This person is running")
+
+
+person1 = Person(21, "David", 1.6, True)
+person2 = Person(55, "Alphonce", 1.8, False)
+person3 = Person(29, "Ian", 1.5, False)
+
+print(person2.name)
+
+person1.run()
+person1.is_black = True
+
+print(person1.is_black)
+
+
+
+# PYTHON INHERITANCE
+
+
+class Animals: # The parent class
+    def walk(self):
+        print("It is walking..")
+    def run(self):
+        print("It is running..")
+
+my_animal = Animals()
+my_animal.walk()
+my_animal.run()
+
+class Dog(Animals): # The child class
+    def bark(self):
+        print("Its is barking..")
+
+
+my_puppy = Dog()
+my_puppy.run()
+my_puppy.bark()
+my_puppy.walk()
+
+
+# DRY Don't Repeat Yourself
+
+import converters
+from converters import kg_to_lbs, lbs_to_kgs
+
+print(kg_to_lbs(100))
+print(lbs_to_kgs(75))
+
+
+from shipping.calculator import shipping_calculator
+
+shipping_calculator()
+"""
+
+# Generating Random Values
+
+# 1) The random method
+import random
+
+for i in range(3):
+    print(random.random())
+
+# 2) The randint method
+
+for i in range(3):
+    print(random.randint(93, 100))
+
+# 3) The random.choice
+
+members = ["David", "Joy", "Philip", "Andrew"]
+chosen_person = random.choice(members)
+print(chosen_person)
