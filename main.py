@@ -1684,3 +1684,5 @@ for i in range(3):
 members = ["David", "Joy", "Philip", "Andrew"]
 chosen_person = random.choice(members)
 print(chosen_person)
+
+""
