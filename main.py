@@ -1685,3 +1685,4 @@ members = ["David", "Joy", "Philip", "Andrew"]
 chosen_person = random.choice(members)
 print(chosen_person)
 
+x = 6
